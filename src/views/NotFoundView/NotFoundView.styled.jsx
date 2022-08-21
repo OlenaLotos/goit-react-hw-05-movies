@@ -2,5 +2,5 @@ import styled from 'styled-components';
 
 export const H1 = styled.h1`
   text-align: center;
-  margin-top: 380px;
+  margin-top: 400px;
 `;
