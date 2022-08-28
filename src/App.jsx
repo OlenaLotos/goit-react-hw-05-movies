@@ -29,9 +29,9 @@ const App = () => {
       <Navigation />
       <Suspense fallback={<div>Loading...Please wait..</div>}>
         <Routes>
-          <Route path="/" exact element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/movies/:movieId/*" element={<MovieDetailsPage />} />
-          <Route path="/movies" exact element={<MoviesPage />} />
+          <Route path="/movies" element={<MoviesPage />} />
           <Route path="*" element={<NotFoundView />} />
         </Routes>
       </Suspense>
