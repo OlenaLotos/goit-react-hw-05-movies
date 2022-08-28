@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { toast } from 'react-toastify';
 import { useSearchParams, useLocation } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import MovieList from '../../components/MovieList/MovieList';
@@ -25,6 +26,7 @@ export default function MoviesPage() {
     event.preventDefault();
 
     if (query.trim() === '') {
+      toast.warn('Please enter films name!');
       return;
     }
 

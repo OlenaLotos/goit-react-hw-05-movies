@@ -32,7 +32,7 @@ const App = () => {
           <Route path="/" exact element={<HomePage />} />
           <Route path="/movies/:movieId/*" element={<MovieDetailsPage />} />
           <Route path="/movies" exact element={<MoviesPage />} />
-          <Route path={'*'} element={NotFoundView} />
+          <Route path="*" element={<NotFoundView />} />
         </Routes>
       </Suspense>
     </>
