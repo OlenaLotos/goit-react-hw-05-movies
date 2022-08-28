@@ -50,7 +50,7 @@ export default function MovieDetailsPage() {
         <Img src={poster_path && poster} alt={title} />
         <MovieAbout>
           <h2>{title}</h2>
-          <p>User Score: {vote_average * 10}%</p>
+          <p>User Score: {((vote_average * 100) / 10).toFixed()}%</p>
           <h3>Overview</h3>
           <p>{overview}</p>
           <h3>Genres</h3>
